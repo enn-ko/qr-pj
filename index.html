@@ -5,65 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
   <title>FQR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
-    :root{
-      --white: hsl(0, 0%, 100%);
-      --light-gray: hsl(212, 45%, 89%);
-      --grayish-blue: hsl(220, 15%, 55%);
-      --dark-blue: hsl(218, 44%, 22%);
-    }
-    body{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Outfit';
-      background: var(--light-gray);
-    }
-    .main{
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container{
-      width: 250px;
-      background: var(--white);
-      padding: 15px;
-      border-radius: 15px;
-      box-shadow: 0 .125rem .25rem rgba(0,0,0, .075);;
-    }
-    .qr-img{
-      width: 100%;
-    }
-    .cont_text{
-      padding: 10px;
-      text-align: center;
-    }
-    .cont-header{
-      margin-top: 0;
-      color: var(--dark-blue);
-    }
-    .cont-para{
-      color: var(--grayish-blue);
-    }
-    @media screen and (max-width:375px) {
-      .container{
-        width: 80%;
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <div role="main" class="main">
+  <main role="main" class="main">
     <div class="container">
-
-      <img src="./images/image-qr-code.png" class="qr-img" alt="QR img">
+      <h1 class="sr-only">QR Card Component</h1>
+      <img src="./images/image-qr-code.png" class="qr-img" alt="QR code to frontendmentor.io">
 
       <div class="cont_text">
         <h4 class="cont-header">Improve your front-end skills by building projects</h4>
@@ -71,6 +24,6 @@
       </div>
 
     </div>
-  </div>
+  </main>
 </body>
 </html>
