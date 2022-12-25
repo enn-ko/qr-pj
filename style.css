@@ -42,10 +42,12 @@ body{
   text-align: center;
 }
 .cont-header{
+  font-weight: 700;
   margin-top: 0;
   color: var(--dark-blue);
 }
 .cont-para{
+  font-size: 15px;
   color: var(--grayish-blue);
 }
 @media screen and (max-width:375px) {
